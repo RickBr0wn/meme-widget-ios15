@@ -7,13 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111F97B8270907AE000E2DDC /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F97B7270907AE000E2DDC /* Meme.swift */; };
+		111F97BC270907E8000E2DDC /* MemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F97BB270907E8000E2DDC /* MemeService.swift */; };
+		117D313927090D81002652DF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117D313827090D81002652DF /* WidgetKit.framework */; };
+		117D313B27090D81002652DF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117D313A27090D81002652DF /* SwiftUI.framework */; };
+		117D313E27090D81002652DF /* meme_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D313D27090D81002652DF /* meme_widget.swift */; };
+		117D314027090D83002652DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117D313F27090D83002652DF /* Assets.xcassets */; };
+		117D314427090D83002652DF /* meme-widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 117D313627090D81002652DF /* meme-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		117D314927090DA4002652DF /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F97B7270907AE000E2DDC /* Meme.swift */; };
+		117D314A27090DB3002652DF /* MemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F97BB270907E8000E2DDC /* MemeService.swift */; };
 		11D272DA2709071E00655E36 /* meme_widget_ios15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D272D92709071E00655E36 /* meme_widget_ios15App.swift */; };
 		11D272DC2709071E00655E36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D272DB2709071E00655E36 /* ContentView.swift */; };
 		11D272DE2709072000655E36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D272DD2709072000655E36 /* Assets.xcassets */; };
 		11D272E12709072000655E36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D272E02709072000655E36 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		117D314227090D83002652DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11D272CE2709071E00655E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 117D313527090D81002652DF;
+			remoteInfo = "meme-widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		117D314527090D83002652DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				117D314427090D83002652DF /* meme-widgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		111F97B7270907AE000E2DDC /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		111F97BB270907E8000E2DDC /* MemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeService.swift; sourceTree = "<group>"; };
+		117D313627090D81002652DF /* meme-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "meme-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		117D313827090D81002652DF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		117D313A27090D81002652DF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		117D313D27090D81002652DF /* meme_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meme_widget.swift; sourceTree = "<group>"; };
+		117D313F27090D83002652DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		117D314127090D83002652DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11D272D62709071E00655E36 /* meme-widget-ios15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meme-widget-ios15.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D272D92709071E00655E36 /* meme_widget_ios15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meme_widget_ios15App.swift; sourceTree = "<group>"; };
 		11D272DB2709071E00655E36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +63,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		117D313327090D81002652DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117D313B27090D81002652DF /* SwiftUI.framework in Frameworks */,
+				117D313927090D81002652DF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11D272D32709071E00655E36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +82,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111F97B627090792000E2DDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				111F97B7270907AE000E2DDC /* Meme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		111F97B9270907B7000E2DDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11D272DB2709071E00655E36 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		111F97BA270907D0000E2DDC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				111F97BB270907E8000E2DDC /* MemeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		117D313727090D81002652DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				117D313827090D81002652DF /* WidgetKit.framework */,
+				117D313A27090D81002652DF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		117D313C27090D81002652DF /* meme-widget */ = {
+			isa = PBXGroup;
+			children = (
+				117D313D27090D81002652DF /* meme_widget.swift */,
+				117D313F27090D83002652DF /* Assets.xcassets */,
+				117D314127090D83002652DF /* Info.plist */,
+			);
+			path = "meme-widget";
+			sourceTree = "<group>";
+		};
 		11D272CD2709071E00655E36 = {
 			isa = PBXGroup;
 			children = (
 				11D272D82709071E00655E36 /* meme-widget-ios15 */,
+				117D313C27090D81002652DF /* meme-widget */,
+				117D313727090D81002652DF /* Frameworks */,
 				11D272D72709071E00655E36 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				11D272D62709071E00655E36 /* meme-widget-ios15.app */,
+				117D313627090D81002652DF /* meme-widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,7 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				11D272D92709071E00655E36 /* meme_widget_ios15App.swift */,
-				11D272DB2709071E00655E36 /* ContentView.swift */,
+				111F97BA270907D0000E2DDC /* Services */,
+				111F97B9270907B7000E2DDC /* Views */,
+				111F97B627090792000E2DDC /* Models */,
 				11D272DD2709072000655E36 /* Assets.xcassets */,
 				11D272DF2709072000655E36 /* Preview Content */,
 			);
@@ -70,6 +168,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		117D313527090D81002652DF /* meme-widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 117D314827090D83002652DF /* Build configuration list for PBXNativeTarget "meme-widgetExtension" */;
+			buildPhases = (
+				117D313227090D81002652DF /* Sources */,
+				117D313327090D81002652DF /* Frameworks */,
+				117D313427090D81002652DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "meme-widgetExtension";
+			productName = "meme-widgetExtension";
+			productReference = 117D313627090D81002652DF /* meme-widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		11D272D52709071E00655E36 /* meme-widget-ios15 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11D272E42709072000655E36 /* Build configuration list for PBXNativeTarget "meme-widget-ios15" */;
@@ -77,10 +192,12 @@
 				11D272D22709071E00655E36 /* Sources */,
 				11D272D32709071E00655E36 /* Frameworks */,
 				11D272D42709071E00655E36 /* Resources */,
+				117D314527090D83002652DF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				117D314327090D83002652DF /* PBXTargetDependency */,
 			);
 			name = "meme-widget-ios15";
 			productName = "meme-widget-ios15";
@@ -97,6 +214,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					117D313527090D81002652DF = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					11D272D52709071E00655E36 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -116,11 +236,20 @@
 			projectRoot = "";
 			targets = (
 				11D272D52709071E00655E36 /* meme-widget-ios15 */,
+				117D313527090D81002652DF /* meme-widgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		117D313427090D81002652DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117D314027090D83002652DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11D272D42709071E00655E36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,10 +262,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		117D313227090D81002652DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117D314A27090DB3002652DF /* MemeService.swift in Sources */,
+				117D313E27090D81002652DF /* meme_widget.swift in Sources */,
+				117D314927090DA4002652DF /* Meme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11D272D22709071E00655E36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111F97B8270907AE000E2DDC /* Meme.swift in Sources */,
+				111F97BC270907E8000E2DDC /* MemeService.swift in Sources */,
 				11D272DC2709071E00655E36 /* ContentView.swift in Sources */,
 				11D272DA2709071E00655E36 /* meme_widget_ios15App.swift in Sources */,
 			);
@@ -144,7 +285,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		117D314327090D83002652DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 117D313527090D81002652DF /* meme-widgetExtension */;
+			targetProxy = 117D314227090D83002652DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		117D314627090D83002652DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C6DQVPTV2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "meme-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "meme-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.rickbrown.meme-widget-ios15.meme-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		117D314727090D83002652DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C6DQVPTV2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "meme-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "meme-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.rickbrown.meme-widget-ios15.meme-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		11D272E22709072000655E36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -264,6 +467,7 @@
 		11D272E52709072000655E36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -277,7 +481,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,6 +498,7 @@
 		11D272E62709072000655E36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +512,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +529,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		117D314827090D83002652DF /* Build configuration list for PBXNativeTarget "meme-widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				117D314627090D83002652DF /* Debug */,
+				117D314727090D83002652DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		11D272D12709071E00655E36 /* Build configuration list for PBXProject "meme-widget-ios15" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
